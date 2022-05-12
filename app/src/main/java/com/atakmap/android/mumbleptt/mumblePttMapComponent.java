@@ -29,7 +29,7 @@ public class mumblePttMapComponent extends DropDownMapComponent {
         ddr = new mumblePttDropDownReceiver(
                 view, context);
 
-        widget = new mumblePttWidget(view, ddr);
+        widget = new mumblePttWidget(MapView.getMapView());
     }
 
     @Override

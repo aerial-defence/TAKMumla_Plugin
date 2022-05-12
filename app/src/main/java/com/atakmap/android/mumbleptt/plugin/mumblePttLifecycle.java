@@ -14,7 +14,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.res.Configuration;
 
-import com.atakmap.android.mumbleptt.mumblePttWidget;
 import com.atakmap.coremap.log.Log;
 
 public class mumblePttLifecycle implements Lifecycle {
@@ -42,7 +41,7 @@ public class mumblePttLifecycle implements Lifecycle {
 
     @Override
     public void onCreate(final Activity arg0,
-            final transapps.mapi.MapView arg1) {
+                         final transapps.mapi.MapView arg1) {
         activity = arg0;
         if (arg1 == null || !(arg1.getView() instanceof MapView)) {
             Log.w(TAG, "This plugin is only compatible with ATAK MapView");
